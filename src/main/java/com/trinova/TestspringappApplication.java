@@ -10,10 +10,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @SpringBootApplication
 public class TestspringappApplication {
 
-	@RequestMapping("/")
+	@RequestMapping("/hello")
 	@ResponseBody
-	String home() {
-		return "Hello World!";
+	public String hello() {
+		return "Hello out there in TV Land!";
+	}
+
+	@RequestMapping("/testing")
+	public String stuff() {
+		return "stuff.html";
 	}
 
 	public static void main(String[] args) {
